@@ -5,6 +5,8 @@
 
 I've got an updated version running at:
 	http://stevencumming.io/clicker
+or:
+	http://stevencumming.io/customercounter
 	
 	USE STORE NUMBER '1234' FOR TESTING
 

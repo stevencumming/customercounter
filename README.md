@@ -37,9 +37,9 @@ I've got an updated version running at:
 	- The actual web content is very light.
 	- All images are vectors, and amount to about 12KB
 	- I'm more concerned about the MySQL qps (queries per second)
-		-> on a dedicated machine with enough RAM and CPU it should
-			be easily able to sustain >2000 qps (I hope)
-		-> The fetch interval can be extended to ease congestion
+		-&gt; on a dedicated machine with enough RAM and CPU it should
+			be easily able to sustain &gt;2000 qps (I hope)
+		-&gt; The fetch interval can be extended to ease congestion
 ** Scalability
 	- Using MySQL and PHP scripts updating hundreds of times every second
 		(worst case, if all stores used this) is unchartered territory for
@@ -49,30 +49,30 @@ I've got an updated version running at:
 
 - Q/A -
 ** What devices can this run on?
-	-> I've tested it on Apple ios devices throughout development
-	-> Any device with a reasonably up-to-date web browser (almost all of
+	-&gt; I've tested it on Apple ios devices throughout development
+	-&gt; Any device with a reasonably up-to-date web browser (almost all of
 		them) should work fine.
-	-> Scaling might be an issue on some older / uncommon devices
-	-> The store iPad should work flawlessly
-	-> The newer RF guns ~should~ work too (if the WiFi reaches).
+	-&gt; Scaling might be an issue on some older / uncommon devices
+	-&gt; The store iPad should work flawlessly
+	-&gt; The newer RF guns ~should~ work too (if the WiFi reaches).
 ** How much mobile data would this use?
-	-> Hardly any, while doing a data request every few seconds the actual
+	-&gt; Hardly any, while doing a data request every few seconds the actual
 		data transfer amounts to hardly anything.
 ** How quickly can this be migrated onto a dedicated host?
-	-> I think very quickly, in the order of hours.
-	-> The application files are pretty light and are all relatively 
+	-&gt; I think very quickly, in the order of hours.
+	-&gt; The application files are pretty light and are all relatively 
 		addressed.
 ** Data Security
-	-> The whole thing is scratch built. So there goes A LOT of security
+	-&gt; The whole thing is scratch built. So there goes A LOT of security
 		and protection. I've tried to make the system robust.
-	-> There are a few modifications I'd like to make to hinder the 
+	-&gt; There are a few modifications I'd like to make to hinder the 
 		unlikely event of an attack (an hour of work to prevent injection
 		attacks for example)
-	-> There is no authentication.
+	-&gt; There is no authentication.
 		That would be nearly impossible given all of the different devices
 		and networks. If anyone with the web address puts in ANY store 
 		number they can adjust the counts.
-		-> I have implemented a function to log the IP addresses, and can 
+		-&gt; I have implemented a function to log the IP addresses, and can 
 			looking into implementing a blacklist (banning them) if 
 			necessary.
 	
@@ -81,9 +81,9 @@ I've got an updated version running at:
 
 - ASSETS -
 ** I have purchased licences for all three images for unrestricted use
-exit.svg 		-> OUT button
-entry.svg 		-> IN button
-crowd.svg		-> favicon, front page icon
+exit.svg 		-&gt; OUT button
+entry.svg 		-&gt; IN button
+crowd.svg		-&gt; favicon, front page icon
 	
 
 

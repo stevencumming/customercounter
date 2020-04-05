@@ -39,10 +39,10 @@ I've got an updated version running at:
 			be easily able to sustain >2000 qps (I hope)
 		- The fetch interval can be extended to ease congestion
 ### Scalability
-	- Using MySQL and PHP scripts updating hundreds of times every second
-		(worst case, if all stores used this) is unchartered territory for
-		me as a developer. I'd be looking for other opinions and tips for
-		optimization.
+- Using MySQL and PHP scripts updating hundreds of times every second
+(worst case, if all stores used this) is unchartered territory for
+me as a developer. I'd be looking for other opinions and tips for
+optimization.
 
 
 ### Q/A 

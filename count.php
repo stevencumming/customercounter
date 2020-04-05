@@ -6,10 +6,14 @@
  *      Page: count.php
  *      Clicker.php's XMLHttpRequest pulls the store's current count from this page.
  *      Used to communicate directly with MySQL database.
+ *
+ *
+ *		TODO: use session storage for store number and sanitise the inputs to prevent injection attacks
+ *
  */
 ?>
 
-<!-- TODO: use session storage for store number and sanitise the inputs to prevent injection attacks -->
+
 
 <?php
     header("Content-type: text/plain");

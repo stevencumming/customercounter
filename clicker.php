@@ -96,8 +96,9 @@
 
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("myCount").innerHTML = this.responseText;
-                updateStatus(this.responseText);
+				var count = this.responseText;
+                document.getElementById("myCount").innerHTML = count;
+                updateStatus(count);
                 
                 readyAgain = true;
             }
@@ -111,8 +112,6 @@
         var min = Number(document.getElementById("min").innerHTML);
         var recommended = Number(document.getElementById("recommended").innerHTML);
         var max = Number(document.getElementById("max").innerHTML);
-
-
 
         if (count < min) {
             // Below Minimum Allowed Customers

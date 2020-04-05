@@ -8,6 +8,7 @@ I've got an updated version running at:
 	
 	USE STORE NUMBER '1234' FOR TESTING
 
+<kbd><img width="300px" src="http://stevencumming.com:8080/cos30015/dumping_ground/customercounter_screenshot.png" /></kbd>
 
 ### SUMMARY
 - Currently, all basic functionality is implemented.

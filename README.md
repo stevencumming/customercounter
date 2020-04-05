@@ -24,7 +24,7 @@ I've got an updated version running at:
 
 
 ### SCALABILITY
-- To scale the application up, a dedicated web host will be necessary:
+- To scale up the application a dedicated web host will be necessary:
 	- PHP, MySQL, and IIS / Apache
 	- I'd probably trial a mid-tier host that can sustain the potentially high traffic
 - A domain would need to be purchased or used too. (to access it)
@@ -33,7 +33,7 @@ I've got an updated version running at:
 ### MY CONCERNS
 - Initial surges of traffic around beginning of trade:
 	- The actual web content is very light.
-	- All images are vectors, and amount to about 12KB
+	- All images are vectors, all amount to about 12KB
 	- I'm more concerned about the MySQL qps (queries per second)
 		- on a dedicated machine with enough RAM and CPU it should
 			be easily able to sustain >2000 qps (I hope)

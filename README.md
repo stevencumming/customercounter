@@ -26,7 +26,7 @@ I've got an updated version running at:
 ### SCALABILITY
 - To scale the application up, a dedicated web host will be necessary:
 	- PHP, MySQL, and IIS / Apache
-	- I'd probably trial a mid-tier host that can sustain 
+	- I'd probably trial a mid-tier host that can sustain the potentially high traffic
 - A domain would need to be purchased or used too. (to access it)
 
 
@@ -38,7 +38,7 @@ I've got an updated version running at:
 		- on a dedicated machine with enough RAM and CPU it should
 			be easily able to sustain >2000 qps (I hope)
 		- The fetch interval can be extended to ease congestion
-** Scalability
+### Scalability
 	- Using MySQL and PHP scripts updating hundreds of times every second
 		(worst case, if all stores used this) is unchartered territory for
 		me as a developer. I'd be looking for other opinions and tips for

@@ -55,6 +55,7 @@ I've got an updated version running at:
 	- Scaling might be an issue on some older / uncommon devices
 	- The store iPad should work flawlessly
 	- The newer RF guns ~should~ work too (if the WiFi reaches).
+		- UPDATE: I've tested on the store's RF guns. It works perfectly
 - How much mobile data would this use?
 	- Hardly any, while doing a data request every few seconds the actual
 		data transfer amounts to hardly anything.

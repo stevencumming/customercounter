@@ -37,17 +37,19 @@ I've got an updated version running at:
 	- All images are vectors, all amount to about 12KB
 	- I'm more concerned about the MySQL qps (queries per second)
 		- on a dedicated machine with enough RAM and CPU it should
-			be easily able to sustain >2000 qps (I hope)
+			be easily able to sustain the traffic
 		- The fetch interval can be extended to ease congestion
 	- Scalability: Using MySQL and PHP scripts updating hundreds of times 
 	every second (worst case, if all stores used this) is unchartered 
 	territory for me as a developer. I'd be looking for other opinions and
-	tips for optimization.
+	tips for optimization. From the research I've done, it does seem like
+	the current implementation should work without issue.
 
 
 ### QUESTIONS / ANSWERS 
 - What devices can this run on?
 	- I've tested it on Apple ios devices throughout development
+	- I've done some testing with BrowserStack, android looks fine too.
 	- Any device with a reasonably up-to-date web browser (almost all of
 		them) should work fine.
 	- Scaling might be an issue on some older / uncommon devices
@@ -60,10 +62,14 @@ I've got an updated version running at:
 	- I think very quickly, in the order of hours.
 	- The application files are pretty light and are all relatively 
 		addressed.
+	- It should be as simple as configuring a database, configuring the web server and
+		then copying the code files.
 - Data Security
 	- The whole thing is scratch built, so it does lack some security features.
 	- I've tried to make the system robust.
-	- There are a few modifications I'd like to extend the code to hinder sql injection attacks, for example.
+	- It's simplicity goes a long way to assist security.
+	- There are a few modifications I'd like to extend the code to hinder sql injection 
+		attacks, for example.
 	- There is no authentication.
 		- A simple password authentication should be relatively simple to implement
 		- I have implemented a function to log the IP addresses, and can 

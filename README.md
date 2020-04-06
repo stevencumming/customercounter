@@ -61,15 +61,11 @@ I've got an updated version running at:
 	- The application files are pretty light and are all relatively 
 		addressed.
 - Data Security
-	- The whole thing is scratch built. So there goes A LOT of security
-		and protection. I've tried to make the system robust.
-	- There are a few modifications I'd like to make to hinder the 
-		unlikely event of an attack (an hour of work to prevent injection
-		attacks for example)
+	- The whole thing is scratch built, so it does lack some security features.
+	- I've tried to make the system robust.
+	- There are a few modifications I'd like to extend the code to hinder sql injection attacks, for example.
 	- There is no authentication.
-		That would be nearly impossible given all of the different devices
-		and networks. If anyone with the web address puts in ANY store 
-		number they can adjust the counts.
+		- A simple password authentication should be relatively simple to implement
 		- I have implemented a function to log the IP addresses, and can 
 			looking into implementing a blacklist (banning them) if 
 			necessary.

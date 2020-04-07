@@ -4,7 +4,7 @@
 ---------------------------- Customer Counter ----------------------------
 
 I've got an updated version running at:
-	~http://stevencumming.io/customercounter~
+	~http://stevencumming.io/customercounter~  
 	Use https://stevencumming.com/customercounter for the latest version!
 	
 	USE STORE NUMBER '1234' FOR TESTING

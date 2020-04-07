@@ -94,10 +94,6 @@ I've got an updated version running at:
 
 
 
-### MySQL credentials
-	user: customercounter
-	pass: doncaster3128
-
 
 
 ### MySQL Tables

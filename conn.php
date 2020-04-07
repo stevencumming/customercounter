@@ -10,6 +10,7 @@
 ?>
 
 <?php
+require_once("functions.php");
 function mySQLconnection() {
     /*
      *  For establishing the mysql object using the supplied credentials
@@ -23,7 +24,8 @@ function mySQLconnection() {
     $conn = new mysqli($servername, $dbusername, $dbpassword, $dbname);
     // Check connection
     if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+        logError("Connection failed: " . $conn->connect_error);
+        die("Please reload");
     }
     return $conn;
 }

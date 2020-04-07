@@ -18,6 +18,7 @@
 <?php
     header("Content-type: text/plain");
     require_once("conn.php");       // MySQL connection object
+    require_once("functions.php");
 
     $store_num = $_GET["store_num"]; // pull store number from URL
     
@@ -54,7 +55,7 @@
             }
         }
         else {
-            echo "ERROR [12]"; // TODO implement more verbose error handling
+            logError("Error: " . $sql . "<br>" . $conn->error);
         }
         $conn->close();
 
@@ -69,7 +70,7 @@
         if ($conn->query($sql) === TRUE) {
             // success
         } else {
-            echo "ERROR [13]"; // TODO implement more verbose error handling
+            logError("Error: " . $sql . "<br>" . $conn->error);
         }
 
         // Increment Total_IN Count
@@ -77,7 +78,7 @@
         if ($conn->query($sql) === TRUE) {
             // success
         } else {
-            echo "ERROR [13.5]"; // TODO implement more verbose error handling
+            logError("Error: " . $sql . "<br>" . $conn->error);
         }
 
         // Return back
@@ -93,7 +94,7 @@
         if ($conn->query($sql) === TRUE) {
             // success
         } else {
-            echo "ERROR [14]"; // TODO implement more verbose error handling
+            logError("Error: " . $sql . "<br>" . $conn->error);
         }
 
         // Increment Total_OUT count
@@ -101,7 +102,7 @@
         if ($conn->query($sql) === TRUE) {
             // success
         } else {
-            echo "ERROR [14.5]"; // TODO implement more verbose error handling
+            logError("Error: " . $sql . "<br>" . $conn->error);
         }
 
         // Return back

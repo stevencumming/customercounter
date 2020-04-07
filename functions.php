@@ -66,8 +66,8 @@ function myRecordVisit($store_num) {
 		//echo "New record created successfully";
 	} else {
 		//echo "Error: " . $sql . "<br>" . $conn->error;
+        logError("Error: " . $sql . "<br>" . $conn->error);
 	}
-
 	$conn->close();
 	
 }
@@ -76,9 +76,22 @@ function myRecordVisit($store_num) {
 
 function logError($error_msg) {
     /*
-     *  TODO
-     *  Logs error to DB and TODO refresh client page w/ error message?
+     *  
+     *  Logs error to DB and refresh client page w/ error message?
      */
+    $conn = mySQLconnection();
+    $sql = "INSERT INTO customercounter.log (store, log.ip, log.status, log.message)
+    VALUES ('" . $_GET["store_num"] . "', '" . getUserIpAddr() . "', 'ERROR', '" . $error_msg . "')";
+
+    if ($conn->query($sql) === TRUE) {
+        //echo "New record created successfully";
+    } else {
+        // 
+    }
+    $conn->close();
+
+    // Force reload
+    echo "<script>location.reload();</script>";
 }
 
 

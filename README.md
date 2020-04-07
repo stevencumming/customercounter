@@ -116,6 +116,8 @@ CREATE TABLE `customercounter`.`log` (
   `store` INT NULL,
   `time` DATETIME NULL DEFAULT now(),
   `ip` VARCHAR(45) NULL,
+  `status` VARCHAR(45) NULL,
+  `message` VARCHAR(90) NULL,
   PRIMARY KEY (`id_log`));
   
 
